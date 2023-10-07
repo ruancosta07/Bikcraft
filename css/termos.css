@@ -1,0 +1,8 @@
+.termos-container p{
+    margin-bottom: 20px;
+    max-width: 75ch;
+}
+
+.termos-container p + h2{
+    margin-top: 40px;
+}

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros</title>
+    <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/termos.css">
+    <link rel="stylesheet" href="css/seguros.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 relative max-w-[1160px]">
+            <a href="./"><img src="assets/bikcraft.svg" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main class="bg-c16">
+        <div class="titulo-bg py-[60px] bg-c16 px-5">
+            <div class="titulo max-w-[1160px] mx-auto">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-base">escolha o seguro</p>
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2.5rem]">você seguro<span class="text-p1">.</span>
+                </h1>
+            </div>
+        </div>
+        <div
+            class="seguros-container max-w-[1160px] mx-auto grid grid-cols-2 gap-[2.5rem] items-center max-lg:grid-cols-1">
+            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2 max-md:px-10">
+                <h3 class="text-c9 text-[2.5rem] font-semibold max-md:text-[2rem]">PRATA</h3>
+                <span
+                    class="text-c1 font-poppins font-semibold text-[2.5rem] leading-[52px] flex flex-col items-end max-md:text-[2rem]">R$
+                    199 <span class="text-[.8rem] leading-[14px] text-c9">mensal</span></span>
+                <ul class="text-c1 font-inter font-medium grid gap-5 mb-[44px]">
+                    <li>Duas trocas por ano</li>
+                    <li>Assistência técnica</li>
+                    <li>Suporte 08h às 18h</li>
+                    <li>Cobertura estadual</li>
+                </ul>
+                <a href="./orcamento.html"
+                    class="bg-c13 text-c1 py-4 px-8 [1.2rem] col-span-full w-fit rounded">INSCREVA-SE</a>
+            </div>
+
+            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2">
+                <h3 class="text-p1 text-[2.5rem] font-semibold max-md:text-[2rem]">OURO</h3>
+                <span
+                    class="text-c1 font-poppins font-semibold text-[2.5rem] leading-[52px] flex flex-col items-end max-md:text-[2rem]">R$
+                    299 <span class="text-[.8rem] leading-[14px] text-c9">mensal</span></span>
+                <ul class="text-c1 font-inter font-medium grid gap-5 mb-[44px]">
+                    <li>Cinco trocas por ano</li>
+                    <li>Assistência especial</li>
+                    <li>Suporte 24h</li>
+                    <li>Cobertura nacional</li>
+                    <li>Desconto em parceitos</li>
+                    <li>Acesso ao Clube Bikcraft</li>
+                </ul>
+                <a href="./orcamento.html"
+                    class="degrade-botao py-4 px-8 text-[1.2rem] col-span-full w-fit">INSCREVA-SE</a>
+            </div>
+        </div>
+
+    </main>
+
+    <article class="vantagens-bg bg-c16 py-[7.5rem]">
+        <div class="vantagens-container max-w-[1160px] mx-auto max-md:px-5">
+            <h2 class="text-[4rem] font-semibold text-c1 mb-[7.5rem] max-md:text-[2.5rem]">vantagens<span class="text-p1">.</span></h2>
+            <ul class="gap-y-[2.5rem] gap-x-[5rem]">
+                <li>
+                    <img src="assets/icones/eletrica.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparo
+                        Elétrico</h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">Garantimos o reparo completo do seu
+                        motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra. </p>
+                </li>
+
+                <li>
+                    <img src="assets/icones/carbono.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparo de
+                        Quadro</h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">Nossos quadros são feitos para durar
+                        para sempre. Mas caso algo ocorra, ficamos felizes em reparar.</p>
+                </li>
+
+                <li>
+                    <img src="assets/icones/sustentavel.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Sustentável
+                    </h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">Trabalhamos com a filosofia de
+                        desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto. </p>
+                </li>
+
+                <li>
+                    <img src="assets/icones/rastreador.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparação</h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">Recuperamos Bikcrafts roubadas sem
+                        custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você.</p>
+                </li>
+
+                <li>
+                    <img src="assets/icones/seguro.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Segurança</h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">O nosso seguro garante que todo
+                        reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft. </p>
+                </li>
+
+                <li>
+                    <img src="assets/icones/velocidade.svg" alt="" class="mb-[1rem]">
+                    <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Rapidez</h3>
+                    <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">A sua Bikcraft ficará pronta para uso
+                        no mesmo dia, caso você traga ela para ser reparada em uma das filiais. </p>
+                </li>
+
+            </ul>
+        </div>
+    </article>
+
+    <article class="perguntas max-w-[1160px] mx-auto py-[7.5rem] max-md:px-5">
+        <h2 class="text-[4rem] font-semibold text-c14 mb-[3.75rem] max-md:text-[2.5rem]">perguntas frequentes<span class="text-p1">.</span>
+        </h2>
+        <dl>
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Qual forma de pagamento vocês aceitam?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Como posso entrar em contato?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Vocês possuem algum desconto?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Qual a garantia que possuo?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Posso parcelar no boleto?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+
+            <div class="p-5 rounded-[5px]">
+                <dt class="font-poppins font-bold text-[1.5rem]">Quantas trocas posso fazer ao ano?</dt>
+                <dd class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                    Mastercard, ELO e American Express. Para
+                    pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
+            </div>
+        </dl>
+
+
+    </article>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="assets/bikcraft.svg" alt="">
+
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

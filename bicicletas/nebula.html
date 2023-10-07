@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebula Cosmic</title>
+    <link rel="shortcut icon" href="/assets/icones/eletrica.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bicicletas-comprar.css">
+    <script defer src="/script.js"></script>
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 relative">
+            <a href="/index.html"><img src="/assets/bikcraft.svg" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="/bicicletas.html">Bicicletas</a></li>
+                    <li><a href="/seguros.html">Seguros</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main class="bg-c16">
+        <div class="titulo-bg pt-[60px] max-[880px]:pt-[40px]">
+            <div class="titulo max-w-[1160px] mx-auto max-md:p-5">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-[1rem]">R$ 3999</p>
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2rem] w-max">Nebula Cosmic<span class="text-p1">.</span></h1>
+            </div>
+        </div>
+
+        <div class="bicicleta max-w-[1160px] mx-auto grid grid-cols-2 items-start py-[60px] gap-10 max-[880px]:py-[40px] max-[880px]:px-5">
+            <div class="bicicleta-imagens ">
+                <img src="/assets/bicicleta/nimbus3.jpg" alt="">
+                <img src="/assets/bicicleta/nimbus1.jpg" alt="">
+                <img src="/assets/bicicleta/nimbus2.jpg" alt="">
+            </div>
+            <div class="bicicletas-conteudo">
+                <p class="font-medium text-c5 text-[1.4rem] mb-[2rem]">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
+                <div class="bicicleta-comprar mb-8">
+                    <a href="/orcamento.html" class="degrade-botao px-[32px] py-[16px] h-fit font-semibold leading-[1.5rem] text-[1.125rem] max-[880px]:mb-3">COMPRAR AGORA</a>
+                    <span class="text-c7 font-medium text-[.9rem]"><img src="/assets/icones/entrega.svg" alt="">entrega em 5 dias</span>
+                    <span class="text-c7 font-medium text-[.9rem]"><img src="/assets/icones/estoque.svg" alt="">18 em estoque</span>
+                </div>
+                <h2 class="text-c1 text-[.9rem] mb-4">INFORMAÇÕES</h2>
+                <ul class="bicicleta-info grid grid-cols-2 p-8 gap-10 max-[880px]:grid-cols-1 max-[880px]:p-0">
+                    <li>
+                        <img src="/assets/icones/eletrica.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.125rem] text-c1 mb-3">Motor Elétrico</h3>
+                        <p class="text-c5">Permite você viajar distâncias inimaginaveis com a sua bike.</p>
+                    </li>
+                    <li>
+                        <img src="/assets/icones/velocidade.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.125rem] text-c1 mb-3">45km/h</h3>
+                        <p class="text-c5">A mais rápida bicicleta elétrica disponível hoje no mercado.</p>
+                    </li>
+                    <li>
+                        <img src="/assets/icones/rastreador.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.125rem] text-c1 mb-3">Rastreador</h3>
+                        <p class="text-c5">Rastreador e sistema anti-furto para garantir o seu sossego.</p>
+                    </li>
+                    <li>
+                        <img src="/assets/icones/eletrica.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.125rem] text-c1 mb-3">Fibra de Carbono</h3>
+                        <p class="text-c5">Maior proteção possível para a sua Bikcraft com fibra de carbono.</p>
+                    </li>
+                    
+                </ul>
+                <h2 class="text-c1 mb-4">FICHA TÉCNICA</h2>
+                <ul class="text-c5 text-[1.1rem] ficha-tecnica">
+                    <li>Peso<span>9kg</span></li>
+                    <li>Altura<span>60cm</span></li>
+                    <li>Largura<span>120cm</span></li>
+                    <li>Profundidade<span>10cm</span></li>
+                    <li>Marchas<span>16</span></li>
+                    <li>Roda<span>29</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <article id="escolha" class="py-[8rem] max-w-[1160px]  mx-auto">
+        <h1 class="max-lg:text-[2rem] text-[4rem] font-semibold mb-[2.5rem]">escolha a
+            sua<span class="text-p1">.</span></h1>
+        <ul class="max-lg:overflow-scroll px-[1.25rem] flex max-w-[1440px] mx-auto gap-10">
+            
+            
+            <li class="min-w-[17.5rem]">
+                <a href="./nimbus.html">
+                    <img src="/assets/bicicletas/nimbus.jpg" alt="">
+                    <h2 class="font-semibold text-[1.5rem]">Nimbus Stark</h2>
+                    <span class="font-inter text-c8">R$ 4999</span>
+                </a>
+            </li>
+
+            <li class="min-w-[17.5rem]">
+                <a href="./magic.html">
+                    <img src="/assets/bicicletas/magic.jpg" alt="">
+                    <h2 class="font-semibold text-[1.5rem]">Magic Might</h2>
+                    <span class="font-inter text-c8">R$ 2499</span>
+                </a>
+            </li>
+        </ul>
+    </article>
+
+    <article class="seguro-bicicleta bg-c16">
+        <div class="seguro-container max-w-[1160px] mx-auto grid grid-cols-2 gap-10 max-[880px]:grid-cols-1">
+            <div class="seguro-imagem">
+                <img src="/assets/fotos/seguros.jpg" alt="Pessoa parada em uma bicicleta" class="w-full h-full object-cover rounded">
+            </div>
+            <div class="seguro-conteudo min-[880px]:pt-[11.25rem] max-[880px]:row-start-1 pt-[40px] max-[880px]:px-5">
+                <h2 class="text-c1 font-semibold text-[4rem] leading-[4.5rem] mb-8 max-[880px]:text-[2rem] max-[880px]:leading-[48px]">Pedale mais tranquilo com o nosso <span class="text-p1">seguro.</span></h2>
+                <p class="text-c5 font-inter font-medium leading-[2.5rem] text-[1.5rem] mb-5 max-[880px]:text-[1.2rem] max-[880px]:leading-[28px]">Inscreva-se em um dos planos do nosso seguro Bikcraft e aproveite diversos benefícios.</p>
+                <a href="../seguros.html" class="degrade-botao px-[1.8rem] py-[.9rem] text-[1.2rem] max-[880px]:px-[1.2rem] max-[880px]:py-[.6rem]">CONHEÇA MAIS</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="/assets/bikcraft.svg" alt="">
+
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="/bicicletas.html">Bicicletas</a></li>
+                    <li><a href="/seguros.html">Seguros</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="/termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

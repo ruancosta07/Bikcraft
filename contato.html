@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contato</title>
+    <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 relative">
+            <a href="./"><img src="assets/bikcraft.svg" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-bg py-[60px] bg-c16">
+            <div class="titulo max-w-[1160px] mx-auto max-md:p-5">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-[1rem]">respostas em até 24h
+                </p>
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2rem] w-max">nosso contato<span
+                        class="text-p1">.</span></h1>
+            </div>
+        </div>
+
+        <div class="contato-container max-w-[1160px] mx-auto mb-[7.5rem]">
+            <section class="contato-dados bg-c15" aria-label="Endereço">
+                <h2 class="text-[1.5rem] text-c1 mb-[3.75rem]">Loja Online</h2>
+                <div class="contato-endereco text-c5">
+                    <p>Rua Ali Perto, 99</p>
+                    <p>Rio de Janeiro - RJ</p>
+                    <p>Brasil</p>
+                </div>
+                <address class="contato-meios normal-case not-italic text-c5">
+                    <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                    <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
+                    <a href="tel:+91 0000-0000">+91 0000-0000</a>
+                </address>
+                <div class="contato-redes flex gap-[32px] pl-7">
+                    <a href=""><img src="assets/redes/instagram-p.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook-p.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube-p.svg" alt=""></a>
+                </div>
+            </section>
+            <section class="contato-form bg-c1" aria-label="Formulário">
+                <form class="form" action="">
+                    <div class="max-[880px]:col-span-2">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                    </div>
+
+                    <div class="max-[880px]:col-span-2">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" placeholder="(21) 9999-9999">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="seuemail@email.com">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                            placeholder="Do que você precisa?"></textarea>
+                    </div>
+                    <button
+                        class="degrade-botao col-span-2 w-max min-[880px]:text-[1.2rem] min-[880px]:py-4 min-[880px]:px-8 mt-5 py-2 px-4">ENVIAR
+                        MENSAGEM</button>
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+    <article class="lojas-container max-w-[1160px] mx-auto mb-[7.5rem] max-[880px]:px-5">
+        <h2 class="col-span-full text-[4rem] font-semibold mb-[3.75rem] max-[880px]:text-[2rem]">nossas lojas<span class="text-p1">.</span></h2>
+        <div class="lojas-item">
+            <img src="assets/lojas/rj.jpg" alt="endereço marcando a Rua Ali Perto, 99 - Rio de Janeiro - RJ">
+            <div class="lojas-conteudo">
+                <h3 class="text-[2rem] font-semibold col-span-full">Rio de Janeiro</h3>
+                <div class="lojas-dados bg-c1 font-medium text-c8">
+                    <p>Rua Ali Perto, 25</p>
+                    <p>Rio de Janeiro - RJ</p>
+                </div>
+                <div class="lojas-dados font-medium text-c8">
+                    <a href="mailto:rj@bikcraft.com">rj@bikcraft.com</a>
+                    <a href="tel:+21 0000-0000">+21 0000-0000</a>
+                </div>
+                <p class="flex gap-2 items-center font-medium w-max"><img src="assets/icones/horario.svg" alt="" class="h-fit">08-18h de seg à dom</p>
+            </div>
+        </div>
+
+        <div class="lojas-item">
+            <img src="assets/lojas/sp.jpg" alt="endereço marcando a Rua Ali Perto, 99 - Rio de Janeiro - sp">
+            <div class="lojas-conteudo">
+                <h3 class="text-[2rem] font-semibold col-span-full">São Paulo</h3>
+                <div class="lojas-dados bg-c1 font-medium text-c8">
+                    <p>Rua Ali Perto, 25</p>
+                    <p>São Paulo - SP</p>
+                </div>
+                <div class="lojas-dados font-medium text-c8">
+                    <a href="mailto:sp@bikcraft.com">sp@bikcraft.com</a>
+                    <a href="tel:+21 0000-0000">+21 0000-0000</a>
+                </div>
+                <p class="flex gap-2 items-center font-medium w-max"><img src="assets/icones/horario.svg" alt="" class="h-fit">08-18h de seg à dom</p>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="assets/bikcraft.svg" alt="">
+
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="/bicicletas.html">Bicicletas</a></li>
+                    <li><a href="/seguros.html">Seguros</a></li>
+                    <li><a href="/formulario.html">Contato</a></li>
+                    <li><a href="/termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

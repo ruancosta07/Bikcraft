@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bicletas ELétricas">
+    <title> Bicicletas</title>
+    <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bicicletas.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 relative">
+            <a href="./"><img src="assets/bikcraft.svg" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main>
+        <div class="titulo-bg py-[60px] bg-c16 max-[800px]:px-[20px]">
+            <div class="titulo max-w-[1160px] mx-auto">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-[800px]:text-base">escolha a melhor para você</p>
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-[800px]:text-[2rem]">nossas bicicletas<span
+                        class="text-p1">.</span></h1>
+            </div>
+        </div>
+
+        <div class="bicicletas-container max-w-[1160px] mx-auto mt-[120px] max-md:mt-[60px]">
+            <div class="bibicletas-imagem relative">
+                <img src="./assets/bicicletas/nimbus.jpg" alt="">
+                <span class="inline-block bg-c14 text-c1 font-semibold px-[1rem] py-[.5rem] rounded-l absolute top-[20px] right-0">R$ 4999</span>
+            </div>
+            <div class="bicicletas-conteudo">
+                <h2 class="text-[2rem] font-semibold mb-[1.25rem]">Nimbus Stark</h2>
+                <p class="text-[1.125rem] text-c11 font-medium">A Nimbus Stark é a melhor Bikcraft já criada pela nossa
+                    equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade. </p>
+                <ul class="lista-vantagens font-poppins font-medium text-[1.125rem]">
+                    <li><img src="./assets/icones/eletrica.svg" alt="">Motor elétrico</li>
+                    <li><img src="./assets/icones/carbono.svg" alt="">Fibra de carbono</li>
+                    <li><img src="./assets/icones/velocidade.svg" alt="">40km/h</li>
+                    <li><img src="./assets/icones/rastreador.svg" alt="">Rastreador</li>
+                </ul>
+                <a href="./bicicletas/nimbus.html" class="degrade-botao px-[2rem] py-[1rem] text-[1.2rem]">MAIS SOBRE <img src="assets/icones/seta.svg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="bicicletas-bg bg-c16">
+            <div class="bicicletas-container max-w-[1160px] mx-auto">
+                <div class="bibicletas-imagem relative">
+                    <img src="./assets/bicicletas/magic.jpg" alt="">
+                    <span class="inline-block bg-c14 text-c1 font-semibold px-[1rem] py-[.5rem] rounded-l absolute top-[20px] right-0">R$ 2499</span>
+                </div>
+                <div class="bicicletas-conteudo">
+                    <h2 class="text-[2rem] font-semibold mb-[1.25rem] text-c1">Magic Might</h2>
+                    <p class="text-[1.125rem] text-c5 font-medium">A Nimbus Stark é a melhor Bikcraft já criada pela
+                        nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade. </p>
+                    <ul class="lista-vantagens font-poppins font-medium text-[1.125rem] text-c5">
+                        <li><img src="./assets/icones/eletrica.svg" alt="">Motor elétrico</li>
+                        <li><img src="./assets/icones/carbono.svg" alt="">Fibra de carbono</li>
+                        <li><img src="./assets/icones/velocidade.svg" alt="">40km/h</li>
+                        <li><img src="./assets/icones/rastreador.svg" alt="">Rastreador</li>
+                    </ul>
+                    <a href="./bicicletas-magic.html" class="degrade-botao px-[2rem] py-[1rem] text-[1.2rem]">MAIS SOBRE <img src="assets/icones/seta.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bicicletas-container max-w-[1160px] mx-auto">
+            <div class="bibicletas-imagem relative">
+                <img src="./assets/bicicletas/nebula.jpg" alt="">
+                <span class="inline-block bg-c14 text-c1 font-semibold px-[1rem] py-[.5rem] rounded-l absolute top-[20px] right-0">R$ 3999</span>
+            </div>
+            <div class="bicicletas-conteudo">
+                <h2 class="text-[2rem] font-semibold mb-[1.25rem]">Nebula Cosmic</h2>
+                <p class="text-[1.125rem] text-c11 font-medium">A Nimbus Stark é a melhor Bikcraft já criada pela nossa
+                    equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade. </p>
+                <ul class="lista-vantagens font-poppins font-medium text-[1.125rem]">
+                    <li><img src="./assets/icones/eletrica.svg" alt="">Motor elétrico</li>
+                    <li><img src="./assets/icones/carbono.svg" alt="">Fibra de carbono</li>
+                    <li><img src="./assets/icones/velocidade.svg" alt="">40km/h</li>
+                    <li><img src="./assets/icones/rastreador.svg" alt="">Rastreador</li>
+                </ul>
+                <a href="./bicicletas-nebula.html" class="degrade-botao px-[2rem] py-[1rem] text-[1.2rem]">MAIS SOBRE <img src="./assets/icones/seta.svg" alt=""></a>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="assets/bikcraft.svg" alt="">
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oferecemos as melhores bicicletas elétricas do mercado">
+    <title>Bikcraft | Bicicletas Elétricas</title>
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 p-0 relative">
+            <a href="./"><img src="assets/bikcraft.svg" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main class="introducao-bg bg-c16 text-c1">
+        <div class="introducao grid lg:grid-cols-2">
+            <article class="p-5 lg:my-auto">
+                <h1 class=" font-poppins font-semibold text-[2rem] lg:text-[4rem]">Bicicletas feitas sob medida<span
+                        class="text-p1">.</span>
+                </h1>
+                <p class="mb-6 lg:text-[1.375rem] text-c5">Bicicletas elétricas de alta precisão e qualidade, feitas sob
+                    medida para o cliente.
+                    Explore o mundo
+                    na sua velocidade com a Bikcraft.</p>
+                <a href="./bicicletas.html"
+                    class="degrade-botao text-p5 lg:py-[1rem] lg:px-[2rem] lg:text-[1.125rem] px-[1rem] py-[.5rem]">Escolha a sua</a>
+            </article>
+            <div class="banner max-lg:w-{80%}">
+                <img src="assets/bicicletas/nimbus-home.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+    <article id="escolha" class="py-[8rem]">
+        <h1 class="max-lg:text-[2rem] text-[4rem] font-semibold mb-[2.5rem] max-w-[1160px] px-[20px] mx-auto">escolha a
+            sua<span class="text-p1">.</span></h1>
+        <ul class="max-lg:overflow-scroll px-[1.25rem] flex max-w-[1440px] mx-auto gap-10">
+            
+            <li class="min-w-[17.5rem]">
+                <a href="./bicicletas/nimbus.html">
+                    <img src="assets/bicicletas/nimbus-home.jpg" alt="">
+                    <h2 class="font-semibold text-[1.5rem]">Nimbus Stark</h2>
+                    <span class="font-inter text-c8">R$ 4999</span>
+                </a>
+            </li>
+            
+            <li class="min-w-[17.5rem]">
+                <a href="/bicicletas/magic.html">
+                    <img src="assets/bicicletas/magic-home.jpg" alt="">
+                    <h2 class="font-semibold text-[1.5rem]">Magic Might</h2>
+                    <span class="font-inter text-c8">R$ 2499</span>
+                </a>
+            </li>
+
+            <li class="min-w-[17.5rem]">
+                <a href="./bicicletas/nebula.html">
+                    <img src="assets/bicicletas/nebula-home.jpg" alt="">
+                    <h2 class="font-semibold text-[1.5rem]">Nebula Cosmic</h2>
+                    <span class="font-inter text-c8">R$ 3499</span>
+                </a>
+            </li>
+        </ul>
+    </article>
+
+    <article class="bg-c15 tecnologia-bg">
+        <div
+            class="tecnologia-container max-w-[1160px] mx-auto grid grid-cols-2 gap-[5.75rem] max-lg:grid-cols-1 max-lg:p-5">
+            <article class="tecnologia-conteudo lg:py-[10rem]">
+                <span
+                    class="uppercase font-inter text-c8 text-[1.5rem] font-semibold tracking-[1.5%] mb-8 max-lg:text-[.9rem]">tecnologia
+                    avançada</span>
+                <h2
+                    class="text-c1 text-[4rem] font-semibold leading-[1.125] mb-8 max-lg:text-[2rem] max-lg:leading-[1.225]">
+                    você escolhe as suas cores e componentes<span class="text-p1">.</span></h2>
+                <p class="text-c3 text-[1.375rem] mb-8 max-lg:text-[1.1rem]">Cada Bikcraft é única e possui a sua
+                    identidade. As medidas serão exatas para o seu corpo e altura,
+                    garantindo maior conforto e ergonomia na sua pedalada. Você pode também personalizar completamente
+                    as suas cores. </p>
+                <a href=""
+                    class="text-p1 text-[1.5rem] mb-10 font-semibold tracking-[1.5%] escolha relative max-lg:text-[1.2rem] hover:text-c1">ESCOLHA
+                    UM MODELO</a>
+                <div class="tecnologia-info grid grid-cols-2 gap-10 max-sm:grid-cols-1">
+                    <div>
+                        <img src="assets/icones/eletrica.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.75rem] text-c1 mb-3 w-max">Motor Elétrico</h3>
+                        <p class="text-c6">Toda Bikcraft é equipada com um motor elétrico que possui duração de até
+                            120h. A bateria é
+                            recarregada com a sua energia gasta ao pedalar.</p>
+                    </div>
+
+                    <div>
+                        <img src="assets/icones/eletrica.svg" alt="" class="mb-2">
+                        <h3 class="font-semibold text-[1.75rem] text-c1 mb-3 w-max">Rastreador</h3>
+                        <p class="text-c6">Toda Bikcraft é equipada com um motor elétrico que possui duração de até
+                            120h. A bateria é
+                            recarregada com a sua energia gasta ao pedalar.</p>
+                    </div>
+                </div>
+            </article>
+
+            <picture class="tecnologia-banner max-lg:hidden">
+                <img src="assets/fotos/tecnologia.jpg" alt="" class="h-full w-full object-cover object-left">
+            </picture>
+        </div>
+    </article>
+
+
+    <section aria-label="Nossos parceiros" class="pb-[3.75rem] max-w-[1160px] mx-auto">
+        <h1
+            class="max-lg:text-[2rem] text-[4rem] font-semibold mb-[2.5rem] max-w-[1160px] px-[20px] mx-auto pt-[3.75rem]">
+            nossos
+            parceiros<span class="text-p1">.</span></h1>
+        <ul class="grid grid-cols-4 mx-auto max-w-[1400px] max-lg:grid-cols-2">
+            <li class="flex border-r-2 border-c3 p-5 border-dashed max-lg:border-b-2"><img class="m-auto"
+                    src="assets/parceiros/caravan.svg" alt=""></li>
+            <li class="flex p-5 border-r-2  border-c3 border-dashed max-lg:border-b-2"><img class="m-auto"
+                    src="assets/parceiros/ranek.svg" alt=""></li>
+            <li class="flex p-5 border-r-2 border-c3 border-dashed"><img class="m-auto"
+                    src="assets/parceiros/handel.svg" alt=""></li>
+            <li class="flex p-5 border-c3 border-dashed"><img class="m-auto" src="assets/parceiros/surfbot.svg" alt="">
+            </li>
+            <li class="flex p-5 border-r-2 border-t-2 border-c3 border-dashed"><img class="m-auto"
+                    src="assets/parceiros/flexblog.svg" alt=""></li>
+            <li class="flex p-5 border-r-2 border-t-2 border-c3 border-dashed"><img class="m-auto"
+                    src="assets/parceiros/lescone.svg" alt=""></li>
+            <li class="flex p-5 border-r-2 border-t-2 border-c3 border-dashed"><img class="m-auto"
+                    src="assets/parceiros/wildbeast.svg" alt=""></li>
+            <li class="flex p-5 border-t-2 border-c3 border-dashed"><img class="m-auto" src="assets/parceiros/dogs.svg"
+                    alt=""></li>
+
+        </ul>
+    </section>
+
+    <section id="depoimentos" aria-label="Depoimentos" class="grid grid-cols-2 bg-p1 max-lg:grid-cols-1 ">
+        <picture>
+            <img src="assets/fotos/depoimento.jpg" alt="" class="w-full h-full object-cover">
+        </picture>
+        <div
+            class="depoimento-conteudo lg:py-[40px] lg:px-[80px] self-end max-lg:py-10 max-lg:px-5 ">
+            <blockquote class="">
+                <p
+                    class="lg:text-[2rem] 2xl:text-[2.75rem] font-merriweather italic font-medium max-w-[32ch] relative max-lg:text-[1.5rem]">
+                    Pedalar sempre foi a minha paixão, o que o pessoal da Bikcraft fez foi intensificar o meu amor por
+                    esta atividade. Recomendo à todos que amo.</p>
+                <span class="text-p4 font-poppins text-[2.5rem] font-semibold">Ana Júlia</span>
+            </blockquote>
+        </div>
+    </section>
+
+    <article class="seguros-bg bg-c15 py-[60px] ">
+        <div
+            class="seguros-container max-w-[1160px] mx-auto grid grid-cols-2 gap-[2.5rem] items-center max-lg:grid-cols-1">
+            <h2 class="text-c1 font-semibold text-[4rem] leading-[52px] col-span-full max-md:text-[2rem]">seguros<span
+                    class="text-p1">.</span></h2>
+            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2">
+                <h3 class="text-c9 text-[2.5rem] font-semibold max-md:text-[2rem]">PRATA</h3>
+                <span
+                    class="text-c1 font-poppins font-semibold text-[2.5rem] leading-[52px] flex flex-col items-end max-md:text-[2rem]">R$
+                    199 <span class="text-[.8rem] leading-[14px] text-c9">mensal</span></span>
+                <ul class="text-c1 font-inter font-medium grid gap-5 mb-[44px]">
+                    <li>Duas trocas por ano</li>
+                    <li>Assistência técnica</li>
+                    <li>Suporte 08h às 18h</li>
+                    <li>Cobertura estadual</li>
+                </ul>
+                <a href="./orcamento.html" class="bg-c14 text-c1 py-4 px-8 [1.2rem] col-span-full w-fit rounded hover:bg-c13">INSCREVA-SE</a>
+            </div>
+
+            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2">
+                <h3 class="text-p1 text-[2.5rem] font-semibold max-md:text-[2rem]">OURO</h3>
+                <span
+                    class="text-c1 font-poppins font-semibold text-[2.5rem] leading-[52px] flex flex-col items-end max-md:text-[2rem]">R$
+                    299 <span class="text-[.8rem] leading-[14px] text-c9">mensal</span></span>
+                <ul class="text-c1 font-inter font-medium grid gap-5 mb-[44px]">
+                    <li>Cinco trocas por ano</li>
+                    <li>Assistência especial</li>
+                    <li>Suporte 24h</li>
+                    <li>Cobertura nacional</li>
+                    <li>Desconto em parceitos</li>
+                    <li>Acesso ao Clube Bikcraft</li>
+                </ul>
+                <a href="./orcamento.html"
+                    class="degrade-botao py-4 px-8 text-[1.2rem] col-span-full w-fit">INSCREVA-SE</a>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="assets/bikcraft.svg" alt="" >
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="/bicicletas.html">Bicicletas</a></li>
+                    <li><a href="/seguros.html">Seguros</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                    <li><a href="/termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
