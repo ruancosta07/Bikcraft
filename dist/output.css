@@ -562,6 +562,10 @@ video {
   grid-column: 1 / -1;
 }
 
+.col-start-2 {
+  grid-column-start: 2;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1046,10 +1050,6 @@ video {
   font-size: 2.5rem;
 }
 
-.text-\[2\.75rem\] {
-  font-size: 2.75rem;
-}
-
 .text-\[2rem\] {
   font-size: 2rem;
 }
@@ -1134,6 +1134,11 @@ video {
 .text-c1 {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-c10 {
+  --tw-text-opacity: 1;
+  color: rgb(92 92 92 / var(--tw-text-opacity));
 }
 
 .text-c11 {
@@ -1370,6 +1375,10 @@ main .introducao {
   letter-spacing: 1.5%;
 }
 
+.degrade-botao:hover{
+  background: linear-gradient(to bottom, #f29900, #a66e00);
+}
+
 #main-nav {
   transition: .3s;
 }
@@ -1495,9 +1504,19 @@ footer li a:hover{
   }
 }
 
+@media (min-width: 1200px){
+  #depoimentos img{
+    max-height: 520px;
+  }
+}
+
 .hover\:bg-c13:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(46 46 46 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gradient-to-b:hover {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
 
 .hover\:text-c1:hover {
@@ -1599,6 +1618,10 @@ footer li a:hover{
   .max-lg\:leading-\[1\.225\] {
     line-height: 1.225;
   }
+
+  .max-lg\:leading-\[32px\] {
+    line-height: 32px;
+  }
 }
 
 @media (max-width: 880px) {
@@ -1680,6 +1703,10 @@ footer li a:hover{
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:mb-\[3\.75rem\] {
+    margin-bottom: 3.75rem;
+  }
+
   .max-md\:mt-\[60px\] {
     margin-top: 60px;
   }
@@ -1722,6 +1749,12 @@ footer li a:hover{
   }
 }
 
+@media (min-width: 768px) {
+  .md\:text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+}
+
 @media (min-width: 880px) {
   .min-\[880px\]\:px-8 {
     padding-left: 2rem;
@@ -1746,6 +1779,10 @@ footer li a:hover{
   .lg\:my-auto {
     margin-top: auto;
     margin-bottom: auto;
+  }
+
+  .lg\:mb-\[7\.5rem\] {
+    margin-bottom: 7.5rem;
   }
 
   .lg\:hidden {
@@ -1789,12 +1826,16 @@ footer li a:hover{
     font-size: 1.375rem;
   }
 
+  .lg\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
   .lg\:text-\[4rem\] {
     font-size: 4rem;
   }
 
-  .lg\:text-\[2rem\] {
-    font-size: 2rem;
+  .lg\:leading-\[72px\] {
+    line-height: 72px;
   }
 }
 
