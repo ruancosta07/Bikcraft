@@ -33,6 +33,10 @@
     border-radius: 4px;
 }
 
+img{
+    border-radius: 4px;
+}
+
 .bicicleta-imagens img:first-child{
     min-width: 100%;
 }

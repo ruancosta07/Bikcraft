@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/orcamento.css">
+    <script defer src="script.js"></script>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header-bg bg-c16 ">
+        <div class="header flex justify-between items-center mx-auto gap-5 max-lg:p-5 relative">
+            <a href="/index.html"><img src="assets/bikcraft.svg" width="136" height="32" alt=""></a>
+            <nav id="main-nav" aria-label="primaria"
+                class="inactive max-lg:absolute max-lg:right-5 max-lg:top-[66px] max-lg:bg-c15 z-10 max-lg:py-5 max-lg:px-10 max-lg:hidden">
+                <ul class="list-none flex max-lg:flex-col text-c1 gap-7 text-[18px]">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <input type="checkbox" name="" id="menu" class="hidden">
+            <label for="menu" class="flex lg:hidden gap-1 bg-c13 px-2 rounded">
+                <h1 class="text-c1 my-auto text-lg">Menu</h1>
+                <div class="menu-hamburguer relative"></div>
+            </label>
+        </div>
+    </header>
+
+    <main class="bg-c15 max-w-[1024px]:px-5">
+        <div class="titulo-bg py-[60px] bg-c16">
+            <div class="titulo max-w-[1160px] mx-auto max-md:p-5">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-[1rem]">cotações no seu email
+                </p>
+                <h1
+                    class="text-[4rem] lg:leading-[72px] font-semibold text-c1 max-md:text-[2rem] max-lg:leading-[32px]">
+                    solicite um
+                    orçamento<span class="text-p1">.</span></h1>
+            </div>
+        </div>
+
+        <form action="./" class=" max-w-[1160px] mx-auto" id="orcamento">
+            <div class="orcamento-produto  text-c1">
+                <h2 class="text-c5 col-span-full">Bikcraft ou Seguro?</h2>
+                <input type="radio" name="bikcraft" id="bikcraft" class="">
+                <label for="bikcraft" class="inline-block font-inter" id="bikcraft-label">Bikcraft</label>
+
+                <input type="radio" name="bikcraft" id="seguro" class="">
+                <label for="seguro" class="inline-block font-inter col-start-2">Seguro</label>
+
+                <div class="orcamento-conteudo" id="orcamento-bikcraft">
+                    <h2 class="text-c5">Escolha a sua (BIKCRAFT)</h2>
+                    <input type="radio" name="produto" id="nimbus">
+                    <label for="nimbus">Nimbus Stark <span>R$ 3999</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul>
+                            <li><img src="assets/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                            <li><img src="assets/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="assets/icones/velocidade.svg" alt="">40km/h</li>
+                            <li><img src="assets/icones/rastreador.svg" alt="">Rastreador</li>
+                        </ul>
+                        <img src="assets/bicicletas/nimbus.jpg" alt="bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" id="magic">
+                    <label for="magic">Magic Might <span>R$ 2499</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul>
+                            <li><img src="assets/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                            <li><img src="assets/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="assets/icones/velocidade.svg" alt="">40km/h</li>
+                            <li><img src="assets/icones/rastreador.svg" alt="">Rastreador</li>
+                        </ul>
+                        <img src="assets/bicicletas/magic.jpg" alt="bicicleta preta">
+                    </div>
+
+                    <input type="radio" name="produto" id="nebula">
+                    <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
+                    <div class="orcamento-detalhes">
+                        <ul>
+                            <li><img src="assets/icones/eletrica.svg" alt="">Motor Elétrico</li>
+                            <li><img src="assets/icones/carbono.svg" alt="">Fibra de Carbono</li>
+                            <li><img src="assets/icones/velocidade.svg" alt="">40km/h</li>
+                            <li><img src="assets/icones/rastreador.svg" alt="">Rastreador</li>
+                        </ul>
+                        <img src="assets/bicicletas/nebula.jpg" alt="bicicleta branca">
+                    </div>
+                </div>
+
+                <div class="orcamento-conteudo" id="orcamento-seguro">
+                    <h2 class="text-c5">Escolha o plano</h2>
+                    <input type="radio" name="seguro" id="prata">
+                    <label for="prata">Prata <span>R$ 199</span></label>
+
+                    <input type="radio" name="seguro" id="ouro">
+                    <label for="ouro">Ouro <span>R$ 299</span></label>
+                </div>
+            </div>
+
+            <div class="orcamento-dados-form  bg-c1">
+                <h2 class="col-span-full text-c9 font-medium">dados pessoais</h2>
+                <div class="max-[880px]:col-span-2">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+
+                <div class="max-[880px]:col-span-2">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome">
+                </div>
+
+                <div class="col-span-2">
+                    <label for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                </div>
+
+                <div class="col-span-2">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email">
+                </div>
+
+                <div class="col-span-full">
+                    <h2 class="text-c9 font-medium">Entrega</h2>
+                </div>
+                <div class="max-[880px]:col-span-2">
+                    <label for="cep">CEP</label>
+                    <input type="text" name="cep" id="cep">
+                </div>
+
+                <div class="max-[880px]:col-span-2">
+                    <label for="numero">Número</label>
+                    <input type="text" name="numero" id="numero">
+                </div>
+
+                <div class="max-[880px]:col-span-2">
+                    <label for="logradour">Logradouro</label>
+                    <input type="text" name="logradour" id="logradour">
+                </div>
+
+                <div class="max-[880px]:col-span-2">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" name="bairro" id="bairro">
+                </div>
+                <div class="max-[880px]:col-span-2">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
+                <div class="max-[880px]:col-span-2">
+                    <label for="estado">Estado</label>
+                    <input type="text" name="estado" id="estado">
+                </div>
+                <button
+                    class="degrade-botao uppercase col-span-full w-fit min-[880px]:text-[1.2rem] min-[880px]:py-4 min-[880px]:px-8 mt-5 py-2 px-4">Solicitar
+                    orçamento</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="footer-bg bg-c15">
+        <div class="footer max-w-[1160px] mx-auto max-lg:grid-cols-1 max-lg:mx-5">
+            <img src="assets/bikcraft.svg" width="136" height="32" alt="">
+
+            <div class="footer-contato">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">CONTATO</h3>
+                <ul class="text-c5 font-inter mb-8 text-[1.2rem] font-medium">
+                    <li><a href="tel:+91 0000-0000">+91 0000-0000</a></li>
+                    <li><a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a></li>
+                    <li>Rua Ali Perto, 00 - Botafogo</li>
+                    <li>Rio de Janeiro - RJ</li>
+                </ul>
+                <div class="redes flex gap-5">
+                    <a href=""><img src="assets/redes/instagram.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/youtube.svg" alt=""></a>
+                    <a href=""><img src="assets/redes/facebook.svg" alt=""></a>
+                </div>
+            </div>
+
+            <div class="informacoes">
+                <h3 class="font-inter text-[1.5rem] text-c1 mb-8">INFORMAÇÕES</h3>
+                <ul class="list-none text-c5 text-[1.2rem] font-medium">
+                    <li><a href="./bicicletas.html">Bicicletas</a></li>
+                    <li><a href="./seguros.html">Seguros</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li><a href="./termos.html">Termos e condições</a></li>
+                </ul>
+            </div>
+            <p class="text-c5 col-span-full mt-8">Bikcraft &copy; Alguns Direitos Reservados.</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

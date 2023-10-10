@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
     font-family: Poppins;
     src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
     font-display: swap;
@@ -24,7 +24,7 @@
     font-family: Merriweather;
     src: url(../assets/fonts/Merriweather/Merriweather-Regular.ttf);
     font-display: swap;
-}
+} */
 
 ::-webkit-scrollbar{
     width: 0px;
@@ -164,6 +164,10 @@ main .introducao {
     letter-spacing: 1.5%;
 }
 
+.degrade-botao:hover{
+    background: linear-gradient(to bottom, #f29900, #a66e00);
+}
+
 #main-nav {
     transition: .3s;
 }
@@ -286,5 +290,11 @@ footer li a:hover{
 
     .footer{
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1200px){
+    #depoimentos img{
+        max-height: 520px;
     }
 }

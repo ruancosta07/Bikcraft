@@ -1,0 +1,209 @@
+#orcamento{
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    margin-bottom: 120px;
+}
+
+.orcamento-dados-form, .orcamento-produto{
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.orcamento-produto{
+    border-radius: 5px 0px 0px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: start;
+    /* place-items: start; */
+    gap: 20px;
+}
+
+.orcamento-produto input{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.orcamento-produto label{
+    color: #d6d6d6;
+    background-color: #2e2e2e;
+    font-weight: 500;
+    font-family: Inter;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid #000;
+}
+
+.orcamento-produto label span{
+    display: none;
+}
+.orcamento-produto input:focus + label{
+    box-shadow: 0 0 0 2px #ffbb00;
+}
+
+.orcamento-produto label::before{
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border: 1px solid #b8b8b8;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 8px;
+}
+
+.orcamento-produto input:checked + label::before{
+    box-shadow: inset 0 0 0 3px #fff, inset 0 0 0 5px #7a7a7a;
+    border-color: #7a7a7a;
+}
+
+.orcamento-produto input:checked + label span{
+    display: inline-block;
+}
+
+
+.orcamento-produto > * {
+    height: fit-content;
+    grid-column: 1 / -1;
+}
+
+.orcamento-produto > label {
+    grid-column: initial ;
+}
+
+.orcamento-produto label:hover{
+    background-color: #4d4d4d;
+}
+
+.orcamento-produto input:checked + label{
+    background-color: #fff;
+    color: #000;
+}
+
+.orcamento-conteudo{
+    display: none;
+}
+
+/* .orcamento-conteudo h2{
+    margin-top: 20px;
+} */
+
+#bikcraft:checked ~ #orcamento-bikcraft, #seguro:checked ~ #orcamento-seguro{
+    display: grid;
+    gap: 20px;
+}
+
+
+.orcamento-dados-form{
+    border-radius: 0px 5px 5px  0px ;
+}
+
+ h2{
+    text-transform: uppercase;
+    color: #0f0f0f;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+h2::before{
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 8px;
+    background-color: #ffbb00;
+    position: absolute;
+    left: -12px;
+}
+
+.orcamento-detalhes{
+    background-color: #fff;
+    padding: 20px;
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.orcamento-detalhes li {
+    font-family: Poppins;
+    width: max-content;
+    font-size: .9rem;
+    color: #000;
+    display: flex; 
+    align-items: center;
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+.orcamento-conteudo input:checked + label + .orcamento-detalhes{
+    display: grid;
+}
+
+.orcamento-detalhes li img{
+    width: 16px;
+}
+
+.orcamento-dados-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.orcamento-dados-form label{
+    font-family: "Poppins";
+    color: #0f0f0f;
+    font-weight: 600;
+    
+}
+
+.orcamento-dados-form h2{
+    font-size: .9rem;
+}
+
+.orcamento-dados-form input{
+    width: 100%;
+}
+
+.orcamento-dados-form label{
+    margin-bottom: 4px;
+}
+
+.orcamento-dados-form input[type="text"],.orcamento-dados-form input[type="email"],.orcamento-dados-form textarea{
+    font: 400 1rem/1.5 Roboto, sans-serif;
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+.orcamento-dados-form input[type="text"]:focus,.orcamento-dados-form input[type="email"]:focus,.orcamento-dados-form textarea:focus{
+    outline: none;
+    border-color: #ffbb00;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #fea;
+}
+
+@media (max-width: 1200px){
+    .orcamento-dados-form,.orcamento-produto{
+        padding: 32px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #orcamento{
+        grid-template-columns: 1fr;
+    }
+
+    .orcamento-detalhes{
+        grid-template-columns: 1fr;
+    }
+}
