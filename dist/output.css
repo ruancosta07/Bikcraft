@@ -994,6 +994,10 @@ video {
   padding-top: 60px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
@@ -1288,7 +1292,7 @@ img {
     position: absolute;
   }
 
-  header nav ul li a:hover::after {
+  header nav ul li a:hover::after, header nav ul li a.header-active::after {
     background-color: #ffffff;
     width: 100%;
     transition: .3s;
@@ -1515,10 +1519,6 @@ footer li a:hover{
   background-color: rgb(46 46 46 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gradient-to-b:hover {
-  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-}
-
 .hover\:text-c1:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1703,10 +1703,6 @@ footer li a:hover{
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:mb-\[3\.75rem\] {
-    margin-bottom: 3.75rem;
-  }
-
   .max-md\:mt-\[60px\] {
     margin-top: 60px;
   }

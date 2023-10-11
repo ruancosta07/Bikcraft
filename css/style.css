@@ -78,7 +78,7 @@ img {
         position: absolute;
     }
 
-    header nav ul li a:hover::after {
+    header nav ul li a:hover::after, header nav ul li a.header-active::after {
         background-color: #ffffff;
         width: 100%;
         transition: .3s;
