@@ -1,0 +1,33 @@
+[data-anime-topToBottom]{
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(-30px);
+}
+
+[data-anime-topToBottom].animate{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+[data-anime-topToBottom2]{
+    opacity: 0;
+    transition: .5s;
+    transform: translateY(-30px);
+}
+
+[data-anime-topToBottom2].animate{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+[data-anime-cresce]{
+    opacity: 0;
+    transition: .5s;
+    transform: scale(.3);
+}
+
+[data-anime-cresce].animate{
+    opacity: 1;
+    transform: scale(1);
+}

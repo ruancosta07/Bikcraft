@@ -40,6 +40,7 @@ function ativarProduto(parametro) {
 
 parametrosUrl.forEach(ativarProduto)
 
+// evento que mostra e esconde as perguntas da página seguros
 const perguntas = document.querySelectorAll('.perguntas button')
 
 function ativarPergunta(event){
@@ -57,6 +58,8 @@ function eventosPerguntas(pergunta){
 
 perguntas.forEach(eventosPerguntas)
 
+// evento que muda as fotos da página de cada bicicleta
+
 const galeria = document.querySelectorAll('.bicicleta-imagens img')
 const galeriaContainer = document.querySelector('.bicicleta-imagens')
 
@@ -70,3 +73,36 @@ function eventosGaleria(img){
 }
 
 galeria.forEach(eventosGaleria)
+
+let elementsToShow = document.querySelectorAll('[data-anime-topToBottom]')
+
+function mostraElementosIniciais(event){
+    elementsToShow.forEach((element, numberOfElements)=>{
+        setTimeout(()=>{
+            element.classList.add('animate')
+        }, 500 * numberOfElements)
+    })
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    mostraElementosIniciais(elementsToShow)
+})
+
+
+
+function cresceElementos(event){
+    let distanciaTopo = window.scrollY + (window.innerHeight * 0.65)
+    elementsToGrow.forEach((element, numberOfElements)=>{
+        if(distanciaTopo > element.offsetTop){
+            setTimeout(function(){
+                element.classList.add('animate')
+            }, 200* numberOfElements)
+        }
+    })
+}
+
+window.addEventListener('DOMContentLoaded', ()=>{
+    mostraElementosIniciais(elementsToGrow)
+})
+
+
