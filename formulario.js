@@ -2,6 +2,8 @@ const formulario = document.querySelector('form')
 const formularioEnviadoSucesso = document.getElementById('formulario-sucesso')
 const barraInferiorFormulario = document.getElementById('formulario-sucesso-underline')
 
+
+// função que desabilita o formulário e aciona o feedback visual do envio
 function enviarFormulario(evento){
     evento.preventDefault()
     const botao = document.querySelector('form button')

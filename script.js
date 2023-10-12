@@ -74,6 +74,8 @@ function eventosGaleria(img){
 
 galeria.forEach(eventosGaleria)
 
+
+// evento de animação dos elementos descendo
 let elementsToShow = document.querySelectorAll('[data-anime-topToBottom]')
 
 function mostraElementosIniciais(event){
@@ -94,6 +96,7 @@ window.addEventListener('scroll', ()=>{
     mostraElementosIniciais(elementsToShow)
 })
 
+// evento de crescimento de alguns elementos na página
 let elementsToGrow = document.querySelectorAll('[data-anime-cresce]')
 
 function cresceElementos(event){
@@ -113,9 +116,8 @@ window.addEventListener('scroll', ()=>{
     cresceElementos(elementsToGrow)
 })
 
-
+// segundo evento de animações de elementos descendo
 let elementsToShow2 = document.querySelectorAll('[data-anime-topToBottom2]')
-
 function mostraElementos(event){
     let windowTop = window.scrollY + (window.innerHeight * 1)
     elementsToShow2.forEach((element, numberOfElements)=>{
