@@ -1268,7 +1268,7 @@ video {
 }
 
 ::-webkit-scrollbar-thumb{
-  background-color: #ffbb00 !important;
+  background-color: #c7c7c7 !important;
 }
 
 label{
@@ -1516,7 +1516,8 @@ footer li a:hover{
   }
 
   #escolha ul::-webkit-scrollbar {
-    background-color: transparent;
+    width: 0px;
+    height: 0px;
   }
 
   .depoimento-conteudo p::before {

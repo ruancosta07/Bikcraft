@@ -275,7 +275,8 @@ footer li a:hover{
     }
 
     #escolha ul::-webkit-scrollbar {
-        background-color: transparent;
+        width: 0px;
+        height: 0px;
     }
 
     .depoimento-conteudo p::before {
