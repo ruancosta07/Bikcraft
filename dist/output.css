@@ -1002,10 +1002,6 @@ video {
   font-family: Inter, sans-serif;
 }
 
-.font-merriweather {
-  font-family: Merriweather, sans-serif;
-}
-
 .font-poppins {
   font-family: Poppins, sans-serif;
 }
@@ -1085,10 +1081,6 @@ video {
 
 .normal-case {
   text-transform: none;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .not-italic {
@@ -1255,7 +1247,7 @@ h2,
 h3,
 a,
 button {
-  font-family: Poppins, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -1263,7 +1255,13 @@ a {
 }
 
 p {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
+}
+
+.depoimento-texto{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-weight: 500;
 }
 
 img {
@@ -1595,6 +1593,10 @@ footer li a:hover{
     padding-bottom: 1.25rem;
   }
 
+  .max-lg\:text-\[\.7rem\] {
+    font-size: .7rem;
+  }
+
   .max-lg\:text-\[\.9rem\] {
     font-size: .9rem;
   }
@@ -1613,6 +1615,14 @@ footer li a:hover{
 
   .max-lg\:text-\[2rem\] {
     font-size: 2rem;
+  }
+
+  .max-lg\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
+  }
+
+  .max-lg\:text-\[1\.6rem\] {
+    font-size: 1.6rem;
   }
 
   .max-lg\:leading-\[1\.225\] {
@@ -1691,15 +1701,6 @@ footer li a:hover{
     padding-left: 20px;
     padding-right: 20px;
   }
-
-  .max-\[800px\]\:text-\[2rem\] {
-    font-size: 2rem;
-  }
-
-  .max-\[800px\]\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 
 @media not all and (min-width: 768px) {
@@ -1736,6 +1737,16 @@ footer li a:hover{
   .max-md\:text-base {
     font-size: 1rem;
     line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .max-\[768px\]\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .max-\[768px\]\:p-0 {
+    padding: 0px;
   }
 }
 
