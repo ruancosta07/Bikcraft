@@ -1267,6 +1267,10 @@ video {
   font-display: swap;
 }
 
+::-webkit-scrollbar-thumb{
+  background-color: #ffbb00 !important;
+}
+
 label{
   display: block;
 }
