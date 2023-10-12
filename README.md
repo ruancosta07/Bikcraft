@@ -5,6 +5,6 @@
 
 <h1>Bikcraft - bicicletas elétricas</h1>
 
-<p>O projeto bikcraft é sobre uma página moderna focada na venda de bicicletas elétricas. Inicialmente planejada e prototipada no figma, para então ser construída utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>Tailwindcss</strong> e <strong>JavaScript</strong>.</p>
+<p>O projeto bikcraft é sobre uma página moderna focada na venda de bicicletas elétricas. Inicialmente planejada e prototipada no figma, para então ser construída utilizando <strong>HTML</strong>, <strong>CSS</strong>, <strong>Tailwindcss</strong> e <strong>JavaScript</strong>. A página conta com diversas animações para criar interatividade ao site, funcionalidades na compra de bicicletas, além de ser responsiva e visar a acessibilidade dos usuários.</p>
 
-<a href="https://ruancosta-bikcraft.vercel.app/index.html">Link da página</a>
+<a href="https://ruancosta-bikcraft.vercel.app/index.html">Acessar projeto</a>
