@@ -77,32 +77,59 @@ galeria.forEach(eventosGaleria)
 let elementsToShow = document.querySelectorAll('[data-anime-topToBottom]')
 
 function mostraElementosIniciais(event){
+    let windowTop = window.scrollY + (window.innerHeight * 1)
     elementsToShow.forEach((element, numberOfElements)=>{
-        setTimeout(()=>{
-            element.classList.add('animate')
-        }, 500 * numberOfElements)
+        if(windowTop > element.offsetTop){
+            setTimeout(()=>{
+                element.classList.add('animate')
+            }, 300 * numberOfElements)
+        }
+        
     })
 }
 
-window.addEventListener('DOMContentLoaded', ()=>{
+mostraElementosIniciais()
+
+window.addEventListener('scroll', ()=>{
     mostraElementosIniciais(elementsToShow)
 })
 
-
+let elementsToGrow = document.querySelectorAll('[data-anime-cresce]')
 
 function cresceElementos(event){
-    let distanciaTopo = window.scrollY + (window.innerHeight * 0.65)
+    let distanciaTopo = window.scrollY + (window.innerHeight * 0.85)
     elementsToGrow.forEach((element, numberOfElements)=>{
         if(distanciaTopo > element.offsetTop){
             setTimeout(function(){
                 element.classList.add('animate')
-            }, 200* numberOfElements)
+            }, 500* numberOfElements)
         }
     })
 }
 
-window.addEventListener('DOMContentLoaded', ()=>{
-    mostraElementosIniciais(elementsToGrow)
+cresceElementos(elementsToGrow)   
+
+window.addEventListener('scroll', ()=>{
+    cresceElementos(elementsToGrow)
 })
 
 
+let elementsToShow2 = document.querySelectorAll('[data-anime-topToBottom2]')
+
+function mostraElementos(event){
+    let windowTop = window.scrollY + (window.innerHeight * 1)
+    elementsToShow2.forEach((element, numberOfElements)=>{
+        if(windowTop > element.offsetTop){
+            setTimeout(()=>{
+                element.classList.add('animate')
+            }, 300 * numberOfElements)
+        }
+        
+    })
+}
+
+mostraElementos()
+
+window.addEventListener('scroll', ()=>{
+    mostraElementos()
+})

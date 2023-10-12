@@ -7,10 +7,12 @@
     <title>Seguros</title>
     <link rel="shortcut icon" href="assets/icones/eletrica.svg" type="image/x-icon">
     <link rel="stylesheet" href="dist/output.css">
-        <link rel="preload" href="css/style.css" as="style">
+    <script defer src="script.js"></script>
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/seguros.css">
-    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="css/animacoes.css">
+
 </head>
 
 <body>
@@ -36,13 +38,14 @@
     <main class="bg-c16">
         <div class="titulo-bg py-[60px] bg-c16 px-5">
             <div class="titulo max-w-[1160px] mx-auto">
-                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-base">escolha o seguro</p>
-                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2.5rem]">você seguro<span class="text-p1">.</span>
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-base" data-anime-topToBottom="">escolha o seguro</p>
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2.5rem]" data-anime-topToBottom="">você seguro<span
+                        class="text-p1">.</span>
                 </h1>
             </div>
         </div>
         <div
-            class="seguros-container max-w-[1160px] mx-auto grid grid-cols-2 gap-[2.5rem] items-center max-lg:grid-cols-1">
+            class="seguros-container max-w-[1160px] mx-auto grid grid-cols-2 gap-[2.5rem] items-center max-lg:grid-cols-1" data-anime-topToBottom="">
             <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2 max-md:px-10">
                 <h3 class="text-c9 text-[2.5rem] font-semibold max-md:text-[2rem]">PRATA</h3>
                 <span
@@ -55,10 +58,10 @@
                     <li>Cobertura estadual</li>
                 </ul>
                 <a href="./orcamento.html?tipo=seguro&produto=prata"
-                    class="bg-c13 text-c1 py-4 px-8 [1.2rem] col-span-full w-fit rounded">INSCREVA-SE</a>
+                    class="bg-c14 text-c1 py-4 px-8 [1.2rem] col-span-full w-fit rounded hover:bg-c13">INSCREVA-SE</a>
             </div>
 
-            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2">
+            <div class="seguros-card px-8 py-[60px] pr-8 bg-c16 grid grid-cols-2" data-anime-topToBottom="">
                 <h3 class="text-p1 text-[2.5rem] font-semibold max-md:text-[2rem]">OURO</h3>
                 <span
                     class="text-c1 font-poppins font-semibold text-[2.5rem] leading-[52px] flex flex-col items-end max-md:text-[2rem]">R$
@@ -79,10 +82,11 @@
     </main>
 
     <article class="vantagens-bg bg-c16 py-[7.5rem]">
-        <div class="vantagens-container max-w-[1160px] mx-auto max-md:px-5">
-            <h2 class="text-[4rem] font-semibold text-c1 mb-[7.5rem] max-md:text-[2.5rem]">vantagens<span class="text-p1">.</span></h2>
+        <div class="vantagens-container max-w-[1160px] mx-auto max-md:px-5 max-lg:px-10">
+            <h2 class="text-[4rem] font-semibold text-c1 mb-[7.5rem] max-md:text-[2.5rem]" data-anime-topToBottom="">vantagens<span
+                    class="text-p1">.</span></h2>
             <ul class="gap-y-[2.5rem] gap-x-[5rem]">
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/eletrica.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparo
                         Elétrico</h3>
@@ -90,7 +94,7 @@
                         motor em caso de falhas. Sabemos que falhas são raras, mas estamos aqui para caso ocorra. </p>
                 </li>
 
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/carbono.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparo de
                         Quadro</h3>
@@ -98,7 +102,7 @@
                         para sempre. Mas caso algo ocorra, ficamos felizes em reparar.</p>
                 </li>
 
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/sustentavel.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Sustentável
                     </h3>
@@ -106,21 +110,21 @@
                         desperdício zero. Qualquer parte defeituosa é reciclada e reutilizada em outro projeto. </p>
                 </li>
 
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/rastreador.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Reparação</h3>
                     <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">Recuperamos Bikcrafts roubadas sem
                         custo adicional para o dono. Se não conseguirmos recuperar, damos uma nova para você.</p>
                 </li>
 
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/seguro.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Segurança</h3>
                     <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">O nosso seguro garante que todo
                         reparo seja feito com peças genuínas e de alta qualidade. Confie na Bikcraft. </p>
                 </li>
 
-                <li>
+                <li data-anime-cresce="">
                     <img src="assets/icones/velocidade.svg" alt="" class="mb-[1rem]">
                     <h3 class="font-poppins font-semibold text-[1.5rem] text-c1 mb-[1rem] leading-[2rem]">Rapidez</h3>
                     <p class="text-c5 font-medium text-[1.125rem]  leading-[24px]">A sua Bikcraft ficará pronta para uso
@@ -132,47 +136,60 @@
     </article>
 
     <article class="perguntas max-w-[1160px] mx-auto py-[7.5rem] max-md:px-5">
-        <h2 class="text-[4rem] font-semibold text-c14 mb-[3.75rem] max-md:text-[2.5rem]">perguntas frequentes<span class="text-p1">.</span>
+        <h2 class="text-[4rem] font-semibold text-c14 mb-[3.75rem] max-md:text-[2.5rem] max-lg:px-10">perguntas frequentes<span
+                class="text-p1">.</span>
         </h2>
         <dl>
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta1" aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
-                <dd id="pergunta1" class="font-inter text-c15 font-medium ativa">Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta1"
+                        aria-expanded="true">Qual forma de pagamento vocês aceitam?</button></dt>
+                <dd id="pergunta1" class="font-inter text-c15 font-medium ativa">Aceitamos cartão de crédito com as
+                    bandeiras: Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>
 
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta2" aria-expanded="false">Como posso entrar em contato?</button></dt>
-                <dd id="pergunta2" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta2"
+                        aria-expanded="false">Como posso entrar em contato?</button></dt>
+                <dd id="pergunta2" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras:
+                    Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>
 
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta3" aria-expanded="false">Vocês possuem algum desconto?</button></dt>
-                <dd id="pergunta3" class="font-inter text-c15 font-medium" >Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta3"
+                        aria-expanded="false">Vocês possuem algum desconto?</button></dt>
+                <dd id="pergunta3" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras:
+                    Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>
 
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta4" aria-expanded="false">Qual a garantia que possuo?</button></dt>
-                <dd id="pergunta4" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta4"
+                        aria-expanded="false">Qual a garantia que possuo?</button></dt>
+                <dd id="pergunta4" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras:
+                    Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>
 
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta5" aria-expanded="false">Posso parcelar no boleto?</button></dt>
-                <dd id="pergunta5" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta5"
+                        aria-expanded="false">Posso parcelar no boleto?</button></dt>
+                <dd id="pergunta5" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras:
+                    Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>
 
             <div class="p-5 rounded-[5px]">
-                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta6" aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
-                <dd id="pergunta6" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras: Visa,
+                <dt class="font-poppins font-bold text-[1.5rem]"><button class="text-left" aria-controls="pergunta6"
+                        aria-expanded="false">Quantas trocas posso fazer ao ano?</button></dt>
+                <dd id="pergunta6" class="font-inter text-c15 font-medium">Aceitamos cartão de crédito com as bandeiras:
+                    Visa,
                     Mastercard, ELO e American Express. Para
                     pagamentos à vista também aceitamos pix e boleto atavés do PagSeguro.</dd>
             </div>

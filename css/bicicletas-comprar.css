@@ -45,6 +45,10 @@ img{
     font-size: 0.85rem
 }
 
+.bicicleta-imagens img{
+    cursor: pointer;
+}
+
 .ficha-tecnica li{
     display: flex;
     padding: 4px 0px;

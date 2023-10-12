@@ -1,6 +1,6 @@
 [data-anime-topToBottom]{
     opacity: 0;
-    transition: .5s;
+    transition: 2s;
     transform: translateY(-30px);
 }
 
@@ -11,7 +11,7 @@
 
 [data-anime-topToBottom2]{
     opacity: 0;
-    transition: .5s;
+    transition: 2s;
     transform: translateY(-30px);
 }
 

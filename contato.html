@@ -10,6 +10,10 @@
         <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/animacoes.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital@1&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
 </head>
 
@@ -35,15 +39,15 @@
 
     <main>
         <div class="titulo-bg py-[60px] bg-c16">
-            <div class="titulo max-w-[1160px] mx-auto max-md:p-5">
-                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-md:text-[1rem]">respostas em até 24h
+            <div class="titulo max-w-[1160px] mx-auto max-md:px-5 max-lg:px-10">
+                <p class="text-[1.5rem] leading-[2rem] uppercase text-c5 mb-1 max-lg:text-[1rem]" data-anime-topToBottom="">respostas em até 24h
                 </p>
-                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-md:text-[2rem] w-max">nosso contato<span
+                <h1 class="text-[4rem] leading-[72px] font-semibold text-c1 max-lg:text-[2.5rem] w-max" data-anime-topToBottom="">nosso contato<span
                         class="text-p1">.</span></h1>
             </div>
         </div>
 
-        <div class="contato-container max-w-[1160px] mx-auto mb-[7.5rem]">
+        <div class="contato-container max-w-[1160px] mx-auto mb-[7.5rem]" data-anime-topToBottom="">
             <section class="contato-dados bg-c15" aria-label="Endereço">
                 <h2 class="text-[1.5rem] text-c1 mb-[3.75rem]">Loja Online</h2>
                 <div class="contato-endereco text-c5">
@@ -52,7 +56,7 @@
                     <p>Brasil</p>
                 </div>
                 <address class="contato-meios normal-case not-italic text-c5">
-                    <a href="mailto:contato@bikcraft.com">contato@bikcraft.com</a>
+                    <a href="mailto:contato@bikcraft.com" class="mb-2">contato@bikcraft.com</a>
                     <a href="mailto:assistencia@bikcraft.com">assistencia@bikcraft.com</a>
                     <a href="tel:+91 0000-0000">+91 0000-0000</a>
                 </address>
@@ -66,23 +70,23 @@
                 <form class="form" action="">
                     <div class="max-[880px]:col-span-2">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Seu nome">
+                        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
                     </div>
 
                     <div class="max-[880px]:col-span-2">
                         <label for="telefone">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" placeholder="(21) 9999-9999">
+                        <input type="text" name="telefone" id="telefone" placeholder="(21) 9999-9999" required>
                     </div>
 
                     <div class="col-span-2">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="seuemail@email.com">
+                        <input type="text" name="email" id="email" placeholder="seuemail@email.com" required>
                     </div>
 
                     <div class="col-span-2">
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem" cols="30" rows="10"
-                            placeholder="Do que você precisa?"></textarea>
+                            placeholder="Do que você precisa?" required></textarea>
                     </div>
                     <button
                         class="degrade-botao col-span-2 w-max min-[880px]:text-[1.2rem] min-[880px]:py-4 min-[880px]:px-8 mt-5 py-2 px-4">ENVIAR
@@ -94,8 +98,8 @@
     </main>
 
     <article class="lojas-container max-w-[1160px] mx-auto lg:mb-[7.5rem] max-md:px-5 mb-[3.75rem]">
-        <h2 class="col-span-full text-[4rem] font-semibold mb-[3.75rem] max-[880px]:text-[2rem]">nossas lojas<span class="text-p1">.</span></h2>
-        <div class="lojas-item">
+        <h2 class="col-span-full text-[4rem] font-semibold mb-[3.75rem] max-[880px]:text-[2rem] max-lg:px-10" data-anime-topToBottom="">nossas lojas<span class="text-p1">.</span></h2>
+        <div class="lojas-item" data-anime-topToBottom>
             <img src="assets/lojas/rj.jpg" alt="endereço marcando a Rua Ali Perto, 99 - Rio de Janeiro - RJ">
             <div class="lojas-conteudo">
                 <h3 class="text-[2rem] font-semibold col-span-full">Rio de Janeiro</h3>
@@ -111,7 +115,7 @@
             </div>
         </div>
 
-        <div class="lojas-item">
+        <div class="lojas-item" data-anime-topToBottom>
             <img src="assets/lojas/sp.jpg" alt="endereço marcando a Rua Ali Perto, 99 - Rio de Janeiro - sp">
             <div class="lojas-conteudo">
                 <h3 class="text-[2rem] font-semibold col-span-full">São Paulo</h3>
