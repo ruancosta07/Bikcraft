@@ -10,6 +10,7 @@
     <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/orcamento.css">
+    <link rel="stylesheet" href="css/animacoes.css">
     <script defer src="script.js"></script>
 </head>
 
@@ -45,7 +46,7 @@
             </div>
         </div>
 
-        <form action="./" class=" max-w-[1160px] mx-auto" id="orcamento">
+        <form action="" class=" max-w-[1160px] mx-auto" id="orcamento">
             <div class="orcamento-produto  text-c1">
                 <h2 class="text-c5 col-span-full">Bikcraft ou Seguro?</h2>
                 <input type="radio" name="bikcraft" id="bikcraft" class="">
@@ -107,22 +108,22 @@
                 <h2 class="col-span-full text-c9 font-medium">dados pessoais</h2>
                 <div class="max-[880px]:col-span-2">
                     <label for="nome">Nome</label>
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" required>
                 </div>
 
                 <div class="max-[880px]:col-span-2">
                     <label for="sobrenome">Sobrenome</label>
-                    <input type="text" name="sobrenome" id="sobrenome">
+                    <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
 
                 <div class="col-span-2">
                     <label for="cpf">CPF</label>
-                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
                 </div>
 
                 <div class="col-span-2">
                     <label for="email">Email</label>
-                    <input type="text" name="email" id="email">
+                    <input type="text" name="email" id="email" required>
                 </div>
 
                 <div class="col-span-full">
@@ -130,36 +131,41 @@
                 </div>
                 <div class="max-[880px]:col-span-2">
                     <label for="cep">CEP</label>
-                    <input type="text" name="cep" id="cep">
+                    <input type="text" name="cep" id="cep" required>
                 </div>
 
                 <div class="max-[880px]:col-span-2">
                     <label for="numero">Número</label>
-                    <input type="text" name="numero" id="numero">
+                    <input type="text" name="numero" id="numero" required>
                 </div>
 
                 <div class="max-[880px]:col-span-2">
                     <label for="logradour">Logradouro</label>
-                    <input type="text" name="logradour" id="logradour">
+                    <input type="text" name="logradour" id="logradour" required>
                 </div>
 
                 <div class="max-[880px]:col-span-2">
                     <label for="bairro">Bairro</label>
-                    <input type="text" name="bairro" id="bairro">
+                    <input type="text" name="bairro" id="bairro" required>
                 </div>
                 <div class="max-[880px]:col-span-2">
                     <label for="cidade">Cidade</label>
-                    <input type="text" name="cidade" id="cidade">
+                    <input type="text" name="cidade" id="cidade" required>
                 </div>
                 <div class="max-[880px]:col-span-2">
                     <label for="estado">Estado</label>
-                    <input type="text" name="estado" id="estado">
+                    <input type="text" name="estado" id="estado" required>
                 </div>
-                <button
+                <button type="submit"
                     class="degrade-botao uppercase col-span-full w-fit min-[880px]:text-[1.2rem] min-[880px]:py-4 min-[880px]:px-8 mt-5 py-2 px-4">Solicitar
                     orçamento</button>
             </div>
         </form>
+
+        <div id="formulario-sucesso" class=" text-c1 font-poppins bg-c13 w-fit p-5 rounded fixed top-[90%] right-5 overflow-hidden translate-x-[100%] hidden opacity-0 max-md:right-2/4 max-md:translate-x-[50%] max-md:w-max">
+            <span class=" flex gap-2 items-center"><img src="assets/icones/checked.svg" alt="" class="w-6">Formulário enviado com sucesso! </span>
+            <div id="formulario-sucesso-underline"></div>
+        </div>
 
     </main>
 

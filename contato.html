@@ -64,34 +64,38 @@
                 </div>
             </section>
             <section class="contato-form bg-c1" aria-label="Formulário">
-                <form class="form" action="">
+                <form class="form" action="" method="post">
                     <div class="max-[880px]:col-span-2">
                         <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+                        <input type="text" name="$nome" id="nome" placeholder="Seu nome" required>
                     </div>
 
                     <div class="max-[880px]:col-span-2">
                         <label for="telefone">Telefone</label>
-                        <input type="text" name="telefone" id="telefone" placeholder="(21) 9999-9999" required>
+                        <input type="text" name="$telefone" id="telefone" placeholder="(21) 9999-9999" required>
                     </div>
 
                     <div class="col-span-2">
                         <label for="email">Email</label>
-                        <input type="text" name="email" id="email" placeholder="seuemail@email.com" required>
+                        <input type="text" name="$email" id="email" placeholder="seuemail@email.com" required>
                     </div>
 
                     <div class="col-span-2">
                         <label for="mensagem">Mensagem</label>
-                        <textarea name="mensagem" id="mensagem" cols="30" rows="10"
+                        <textarea name="$mensagem" id="mensagem" cols="30" rows="10"
                             placeholder="Do que você precisa?" required></textarea>
                     </div>
-                    <button
+                    <button type="submit"
                         class="degrade-botao col-span-2 w-max min-[880px]:text-[1.2rem] min-[880px]:py-4 min-[880px]:px-8 mt-5 py-2 px-4">ENVIAR
                         MENSAGEM</button>
                 </form>
+
             </section>
         </div>
-
+        <div id="formulario-sucesso" class=" text-c1 font-poppins bg-c13 w-fit p-5 rounded fixed top-[90%] right-5 overflow-hidden translate-x-[100%] hidden opacity-0 max-md:right-2/4 max-md:translate-x-[50%] max-md:w-max">
+            <span class=" flex gap-2 items-center"><img src="assets/icones/checked.svg" alt="" class="w-6">Formulário enviado com sucesso! </span>
+            <div id="formulario-sucesso-underline"></div>
+        </div>
     </main>
 
     <article class="lojas-container max-w-[1160px] mx-auto lg:mb-[7.5rem] max-md:px-5 mb-[3.75rem]">

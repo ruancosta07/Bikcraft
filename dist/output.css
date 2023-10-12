@@ -534,6 +534,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -546,8 +550,16 @@ video {
   right: 0px;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
 .top-\[20px\] {
   top: 20px;
+}
+
+.top-\[90\%\] {
+  top: 90%;
 }
 
 .z-10 {
@@ -677,6 +689,10 @@ video {
   height: 100%;
 }
 
+.w-6 {
+  width: 1.5rem;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -709,6 +725,15 @@ video {
 
 .max-w-\[32ch\] {
   max-width: 32ch;
+}
+
+.translate-x-\[100\%\] {
+  --tw-translate-x: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .list-none {
@@ -786,6 +811,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded {
@@ -1046,6 +1075,10 @@ video {
   font-size: 18px;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .text-\[2\.5rem\] {
   font-size: 2.5rem;
 }
@@ -1061,10 +1094,6 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-\[1rem\] {
-  font-size: 1rem;
 }
 
 .font-bold {
@@ -1206,8 +1235,8 @@ video {
   color: rgb(51 34 0 / var(--tw-text-opacity));
 }
 
-.text-\[\] {
-  color: ;
+.opacity-0 {
+  opacity: 0;
 }
 
 @font-face {
@@ -1543,6 +1572,10 @@ footer li a:hover{
     top: 66px;
   }
 
+  .max-lg\:right-2\/4 {
+    right: 50%;
+  }
+
   .max-lg\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
@@ -1550,6 +1583,20 @@ footer li a:hover{
 
   .max-lg\:hidden {
     display: none;
+  }
+
+  .max-lg\:w-4 {
+    width: 1rem;
+  }
+
+  .max-lg\:-translate-x-\[50\%\] {
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-lg\:translate-x-\[50\%\] {
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .max-lg\:grid-cols-1 {
@@ -1581,6 +1628,14 @@ footer li a:hover{
     padding: 1.25rem;
   }
 
+  .max-lg\:p-2 {
+    padding: 0.5rem;
+  }
+
+  .max-lg\:p-3 {
+    padding: 0.75rem;
+  }
+
   .max-lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1601,10 +1656,6 @@ footer li a:hover{
     padding-bottom: 1.25rem;
   }
 
-  .max-lg\:text-\[\.7rem\] {
-    font-size: .7rem;
-  }
-
   .max-lg\:text-\[\.9rem\] {
     font-size: .9rem;
   }
@@ -1621,16 +1672,20 @@ footer li a:hover{
     font-size: 1.5rem;
   }
 
+  .max-lg\:text-\[1\.6rem\] {
+    font-size: 1.6rem;
+  }
+
   .max-lg\:text-\[2rem\] {
     font-size: 2rem;
   }
 
-  .max-lg\:text-\[1\.8rem\] {
-    font-size: 1.8rem;
+  .max-lg\:text-\[\.8rem\] {
+    font-size: .8rem;
   }
 
-  .max-lg\:text-\[1\.6rem\] {
-    font-size: 1.6rem;
+  .max-lg\:text-\[\.7rem\] {
+    font-size: .7rem;
   }
 
   .max-lg\:leading-\[1\.225\] {
@@ -1712,12 +1767,30 @@ footer li a:hover{
 }
 
 @media not all and (min-width: 768px) {
+  .max-md\:right-2\/4 {
+    right: 50%;
+  }
+
   .max-md\:mt-\[60px\] {
     margin-top: 60px;
   }
 
+  .max-md\:w-max {
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .max-md\:translate-x-\[50\%\] {
+    --tw-translate-x: 50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .max-md\:p-5 {
     padding: 1.25rem;
+  }
+
+  .max-md\:p-3 {
+    padding: 0.75rem;
   }
 
   .max-md\:px-10 {
@@ -1740,11 +1813,6 @@ footer li a:hover{
 
   .max-md\:text-\[2rem\] {
     font-size: 2rem;
-  }
-
-  .max-md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 
@@ -1841,6 +1909,10 @@ footer li a:hover{
     font-size: 1.375rem;
   }
 
+  .lg\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
   .lg\:text-\[2rem\] {
     font-size: 2rem;
   }
@@ -1849,16 +1921,12 @@ footer li a:hover{
     font-size: 4rem;
   }
 
-  .lg\:text-\[1\.5rem\] {
-    font-size: 1.5rem;
+  .lg\:leading-\[2rem\] {
+    line-height: 2rem;
   }
 
   .lg\:leading-\[72px\] {
     line-height: 72px;
-  }
-
-  .lg\:leading-\[2rem\] {
-    line-height: 2rem;
   }
 }
 
