@@ -1063,6 +1063,10 @@ video {
   line-height: 1.75rem;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1200,6 +1204,10 @@ video {
 .text-p5 {
   --tw-text-opacity: 1;
   color: rgb(51 34 0 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 @font-face {
@@ -1841,8 +1849,16 @@ footer li a:hover{
     font-size: 4rem;
   }
 
+  .lg\:text-\[1\.5rem\] {
+    font-size: 1.5rem;
+  }
+
   .lg\:leading-\[72px\] {
     line-height: 72px;
+  }
+
+  .lg\:leading-\[2rem\] {
+    line-height: 2rem;
   }
 }
 
